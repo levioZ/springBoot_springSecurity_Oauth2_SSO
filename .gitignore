@@ -4,8 +4,8 @@
 *.pdf
 npm-debug.log
 *.iml
-/browser/node_modules/
-/server/build/
-/server/logs/
-/server/out/
+/biu/browser/node_modules/
+/biu/server/build/
+/biu/server/logs/
+/biu/server/out/
 /demo/
