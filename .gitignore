@@ -1,0 +1,11 @@
+.idea
+/biu/.gradle
+*.class
+*.pdf
+npm-debug.log
+*.iml
+/browser/node_modules/
+/server/build/
+/server/logs/
+/server/out/
+/demo/
