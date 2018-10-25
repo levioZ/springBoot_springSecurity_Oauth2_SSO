@@ -76,6 +76,16 @@ bootRun {
     classpath = sourceSets.main.runtimeClasspath + configurations.dev
 }
 
+task debugRun(dependsOn:bootRun) {
+    gradle.taskGraph.whenReady { graph ->
+        if (graph.hasTask(debugRun)) {
+            bootRun {
+                debug = true
+            }
+        }
+    }
+}
+
 /**
  * gradle的持续构建和springboot devtools结合，不用修改java代码后自己重启。
  * 开两个terminal，分别执行以下的命令即可：
